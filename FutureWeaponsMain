@@ -1,0 +1,36 @@
+package FutureWeaponsMain;
+
+import Items.Cfitems;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+
+@Mod(modid = FutureWeaponsMain.MODID, version = FutureWeaponsMain.VERSION)
+public class FutureWeaponsMain
+{
+    public static final String MODID = "Future Weapons";
+    public static final String VERSION = "1.0";
+    
+    @Instance("FutureWeaponsMain")
+	public static FutureWeaponsMain instance;
+
+    
+    @EventHandler
+    public void preInit(FMLInitializationEvent event){
+    Cfitems.init();
+    {
+    	
+    }
+
+	}
+    @EventHandler
+    public void load(FMLInitializationEvent event){
+    Cfitems.addNames();
+    
+    {
+    }
+    }
+    }
+
