@@ -1,0 +1,23 @@
+package Items;
+
+
+import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+
+public class Plasma_Rifle extends Item {
+
+
+	public Plasma_Rifle(int id) {
+		super(390);
+		setCreativeTab(CreativeTabs.tabCombat);
+		setMaxStackSize(1);
+		setUnlocalizedName(Iteminfo.Plasma_Rifle_UNLOCALIZED_NAME);
+	}
+
+
+
+
+}
+
