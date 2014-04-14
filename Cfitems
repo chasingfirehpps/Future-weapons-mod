@@ -1,0 +1,27 @@
+package Items;
+
+
+import net.minecraft.item.Item;
+import cpw.mods.fml.common.registry.LanguageRegistry;
+
+
+public class Cfitems {
+
+
+	//Plasma Rifle
+	public static Item Plasma_Rifle;
+	
+	
+		public static void init() {
+			Plasma_Rifle = new Plasma_Rifle(Iteminfo.Plasma_Rifle_ID);}
+		public static void addNames() {
+			LanguageRegistry.addName(Plasma_Rifle, Iteminfo.Plasma_Rifle_NAME);}
+		{
+
+
+		}
+		{
+
+
+		}
+		}
