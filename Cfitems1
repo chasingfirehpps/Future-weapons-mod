@@ -1,0 +1,34 @@
+package Items;
+
+
+import net.minecraft.item.Item;
+import cpw.mods.fml.common.registry.LanguageRegistry;
+
+
+public class Cfitems1 {
+
+
+	//Plasma_Cell
+	public static Item Plasma_Cell;
+
+
+
+
+	public static void init() {
+		Plasma_Cell = new Plasma_Cell(Iteminfo.Plasma_Cell_ID);}
+		public static void addNames() {
+			LanguageRegistry.addName(Plasma_Cell, Iteminfo.Plasma_Cell_NAME);}
+		{
+
+
+		}
+		{
+
+
+		}
+		
+
+
+
+		}
+		
