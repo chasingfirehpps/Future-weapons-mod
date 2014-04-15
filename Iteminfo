@@ -3,11 +3,19 @@ package Items;
 
 public class Iteminfo {
 //Plasma_Rifle
-	public static final String Anthracite_TEXTURE_LOCATION = "items";
+	public static final String Plasma_Rifle_TEXTURE_LOCATION = "items";
 	public static int Plasma_Rifle_ID;
 	public static final String Plasma_Rifle_KEY = "Plasma Rifle";
 	public static final int Plasma_Rifle = 2750;
 	public static final String Plasma_Rifle_UNLOCALIZED_NAME = "Plasma_Rifle";
 	public static final String Plasma_Rifle_NAME = "Plasma Rifle";
-	public static final String Plasma_Rifle_Icon = "Plasma_Rifle";
-	}
+	public static final String Plasma_Rifle_Icon = "plasmarifle";
+	
+	public static final String Plasma_Cell_TEXTURE_LOCATION = "items";
+	public static int Plasma_Cell_ID;
+	public static final String Plasma_Cell_KEY = "Plasma Cell";
+	public static final int Plasma_Cell = 2751;
+	public static final String Plasma_Cell_UNLOCALIZED_NAME = "Plasma_Cell";
+	public static final String Plasma_Cell_NAME = "Plasma Cell";
+	public static final String Plasma_Cell_Icon = "plasmacell";
+}
