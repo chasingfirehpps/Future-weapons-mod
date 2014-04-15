@@ -23,7 +23,7 @@ public class FutureWeaponsMain
     {
     	
     }
-
+ 
 	}
     @EventHandler
     public void load(FMLInitializationEvent event){
