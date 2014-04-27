@@ -18,4 +18,12 @@ public class Iteminfo {
 	public static final String Plasma_Cell_UNLOCALIZED_NAME = "Plasma_Cell";
 	public static final String Plasma_Cell_NAME = "Plasma Cell";
 	public static final String Plasma_Cell_Icon = "plasmacell";
+	
+	public static final String Plasma_Rifle_Stock_TEXTURE_LOCATION = "items";
+	public static int Plasma_Rifle_Stock_ID;
+	public static final String Plasma_Rifle_Stock_KEY = "Plasma Rifle Stock";
+	public static final int Plasma_Rifle_Stock = 2752;
+	public static final String Plasma_Rifle_Stock_UNLOCALIZED_NAME = "Plasma_Rifle_Stock";
+	public static final String Plasma_Rifle_Stock_NAME = "Plasma Rifle Stock";
+	public static final String Plasma_Rifle_Stock_Icon = "Plasma_Rifle_Stock";
 }
