@@ -1,7 +1,6 @@
 package Items;
 
 
-import Entities.EntityPlasmaBolt;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
@@ -41,7 +40,7 @@ public class Plasma_Rifle extends Item {
 	     par2World.playSoundAtEntity(par3EntityPlayer, "random.bow", 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
 	     if (!par2World.isRemote)
 	     {
-	       par2World.spawnEntityInWorld(new EntityPlasmaBolt(par2World));
+	       par2World.spawnEntityInWorld(new EntitySnowball(par2World));
 	     }
 	   }
 	   return par1ItemStack;
@@ -121,6 +120,12 @@ public class Plasma_Rifle extends Item {
 	       
 	        
 	    
+	
+
+
+
+
+
 	
 
 
