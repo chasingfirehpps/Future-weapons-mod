@@ -17,7 +17,6 @@ import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.EntityRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
 
 
 @Mod(modid = "Future Weapons", name = "Future Weapons", version = "1.0.0")
@@ -41,7 +40,15 @@ public class FutureWeaponsMain {
 	Cfitems6.init();
 	Cfitems7.init();
 	Cfitems8.init();
+	
+	
+	int modEntityID = 0;
+	EntityRegistry.registerModEntity(EntityPlasmaBolt.class, "Plasma Bolt", ++modEntityID, this, 64, 10, 
+			true);
+	proxy.registerRenderers();
 	}
+	
+	
 
 
 
@@ -58,18 +65,9 @@ public class FutureWeaponsMain {
 		Cfitems6.addNames();
 		Cfitems7.addNames();
 		Cfitems8.addNames();
-		 proxy.registerRenderers();
-		 EntityRegistry.registerModEntity(EntityPlasmaBolt.class, "PlasmaBolt", 2, instance, 160, 1, false);
-		    @Override
-		       public void registerRenderers() {
-		           super.registerRenderers();    
-		           EntityRegistry.registerGlobalEntityID(EntityPlasmaBolt.class, "PlasmaBolt", ModLoader.getUniqueEntityId());
-		           RenderingRegistry.registerEntityRenderingHandler(EntityPlasmaBolt.class, new RenderPlasmaBolt());
-		           }
-
-
 	
-		 
+
+
 		    }
 		    
 
@@ -85,5 +83,6 @@ public class FutureWeaponsMain {
 
 	}
 	}
+
 
 
