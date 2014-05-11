@@ -1,0 +1,9 @@
+package FutureWeaponsMain; 
+
+public class CommonProxy 
+{ 
+public void registerRenderInformation() 
+ { 
+
+ } 
+} 
