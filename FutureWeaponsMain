@@ -27,7 +27,7 @@ public class FutureWeaponsMain {
 	@Instance("Future_Weapons")
 	public static FutureWeaponsMain instance;
 
-	@SidedProxy( clientSide = "ClientProxy", serverSide = "CommonProxy" )
+	@SidedProxy( clientSide = "FutureWeaponsMain.ClientProxy", serverSide = "FutureWeaponsMain.CommonProxy" )
 	public static CommonProxy proxy;
 
 
