@@ -14,6 +14,7 @@ import Items.Cfitems8;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.EntityRegistry;
@@ -25,6 +26,9 @@ public class FutureWeaponsMain {
 
 	@Instance("Future_Weapons")
 	public static FutureWeaponsMain instance;
+
+	@SidedProxy( clientSide = "ClientProxy", serverSide = "CommonProxy" )
+	public static CommonProxy proxy;
 
 
 
@@ -40,7 +44,7 @@ public class FutureWeaponsMain {
 	Cfitems6.init();
 	Cfitems7.init();
 	Cfitems8.init();
-	
+	 proxy.preInit();
 	
 	int modEntityID = 0;
 	EntityRegistry.registerModEntity(EntityPlasmaBolt.class, "Plasma Bolt", ++modEntityID, this, 64, 10, 
@@ -66,7 +70,7 @@ public class FutureWeaponsMain {
 		Cfitems7.addNames();
 		Cfitems8.addNames();
 	
-
+		  proxy.load();
 
 		    }
 		    
@@ -83,6 +87,7 @@ public class FutureWeaponsMain {
 
 	}
 	}
+
 
 
 
