@@ -1,6 +1,7 @@
 package FutureWeaponsMain;
 
 
+import net.minecraft.item.Item;
 import Entities.EntityPlasmaBolt;
 import Items.Cfitems;
 import Items.Cfitems1;
@@ -11,6 +12,7 @@ import Items.Cfitems5;
 import Items.Cfitems6;
 import Items.Cfitems7;
 import Items.Cfitems8;
+import Items.Plasma_Rifle;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -26,7 +28,7 @@ public class FutureWeaponsMain {
 
 	@Instance("Future_Weapons")
 	public static FutureWeaponsMain instance;
-
+	
 	@SidedProxy( clientSide = "FutureWeaponsMain.ClientProxy", serverSide = "FutureWeaponsMain.CommonProxy" )
 	public static CommonProxy proxy;
 
@@ -46,6 +48,8 @@ public class FutureWeaponsMain {
 	Cfitems8.init();
 	 proxy.preInit();
 	
+	 
+	 Item Plasma_Rifle = new Plasma_Rifle(0).setUnlocalizedName("Plasma_Rifle");
 	int modEntityID = 0;
 	EntityRegistry.registerModEntity(EntityPlasmaBolt.class, "Plasma Bolt", ++modEntityID, this, 64, 10, 
 			true);
