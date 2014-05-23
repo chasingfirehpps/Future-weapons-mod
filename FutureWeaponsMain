@@ -20,7 +20,7 @@ import entities.entityplasmabolt;
 @Mod(modid = Reference.MODID, version = Reference.VERSION)
 public class FutureWeaponsMain 
 {
-	@SidedProxy( clientSide = "FutureWeaponsMain.ClientProxy", serverSide = "FutureWeaponsMain.CommonProxy" )
+	@SidedProxy( clientSide = "FutureWeapons.ClientProxy", serverSide = "FutureWeapons.CommonProxy" )
 	public static CommonProxy proxy;
 
   public static Item Plasma_Rifle;
@@ -47,6 +47,11 @@ public class FutureWeaponsMain
 	}
 		
 	}
+
+
+
+
+
 
 
 
